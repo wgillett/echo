@@ -1,5 +1,4 @@
-// jQuery-based script to get artist bios from the Echo Nest via AJAX calls.
-// For a production application, this code would be in a separate file - Unobtrusive JavaScript.
+// jQuery-based script to get artist bios from the Echo Nest via AJAX calls
 
 var ECHO_NEST_API_CALL_SUCCESS_STATUS = 0;
 

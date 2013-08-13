@@ -1,13 +1,13 @@
 #artistsWrap {
     float: left;
-    width: 20%;
+    width: 15%;
 }
 #artists {
     width: 250px;
     float: left;
 }
 #artistBio {
-    background-color: MistyRose;
+    background-color: ivory;
     margin-left: 250px;
     height: 100%;
 }
