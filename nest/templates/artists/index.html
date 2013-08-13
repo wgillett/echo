@@ -1,0 +1,31 @@
+<link href="{{ STATIC_URL }}nest/artists/index.css" rel="stylesheet" type="text/css" media="screen" />
+
+<script src="{{ STATIC_URL }}nest/jquery-2.0.0.min.js"></script>
+<script>
+    window.echoNestApiKey = "{{ echo_nest_api_key }}"
+</script>
+<script src="{{ STATIC_URL }}nest/artists/index.js"></script>
+
+<div id="artistsWrap">
+    <div id="artists">
+        {% if artists %}
+            <table>
+            {% for artist in artists %}
+                <tr>
+                    <td><a href="/artists/{{ artist.id }}/">{{ artist.name }}</a></td>
+                    <td><button class="getBio" type="button">bio</button></td>
+                </tr>
+            {% endfor %}
+            </table>
+        {% else %}
+            <p>No artists are available.</p>
+        {% endif %}
+    </div>
+</div>
+<div id="artistBio" style="">
+    <div id="artistBioPlaceholder">
+        Click on the "Bio" button for any artist in the list on the left, and that artist's
+        biography will be filled in here
+    </div>
+</div>
+<div id="clear"></div>

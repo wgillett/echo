@@ -1,0 +1,19 @@
+#artistsWrap {
+    float: left;
+    width: 20%;
+}
+#artists {
+    width: 250px;
+    float: left;
+}
+#artistBio {
+    background-color: MistyRose;
+    margin-left: 250px;
+    height: 100%;
+}
+#artistBioPlaceholder {
+    font-style: italic;
+}
+#clear {
+    clear: both;
+}
